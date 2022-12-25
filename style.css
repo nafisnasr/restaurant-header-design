@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/02.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-menu {
+    margin-right: 5rem;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    margin-right: 3rem;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.navbar-menu a:hover {
+    color: rgb(161, 157, 157);
+}
+
+.logo {
+    font-family: 'Corinthia', cursive;
+    margin-left: 3rem;
+    font-size: 1.8rem;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    color: rgb(161, 157, 157);
+
+}
+
+.wrapper {
+    height: 85vh;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper p {
+    font-size: 5rem;
+    font-family: 'Corinthia', cursive;
+    color: rgb(204, 17, 17);
+    font-weight: 400;
+    animation: headerAnimation 3s;
+}
+
+.wrapper h1 {
+    font-size: 5rem;
+    color: #fff;
+    letter-spacing: 0.5rem;
+    animation: headerAnimation 3s;
+}
+
+.book-btn {
+    width: 15rem;
+    height: 3rem;
+    color: #fff;
+    border: 2px solid #fff;
+    background: transparent;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    margin-top: 1.7rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.5s;
+    animation: headerAnimation 3s 1s;
+}
+
+.book-btn:hover {
+    transform: scale(1.1);
+}
+
+@keyframes headerAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
